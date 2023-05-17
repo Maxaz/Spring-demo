@@ -1,0 +1,31 @@
+terminal scripts:
+
+/list db containers
+docker compose ps 
+
+/list logs for container (example with 'postgres' container)
+docker logs postgres 
+
+/connect to db eg.'postgres'
+docker exec -it postgres bash
+
+/connect to db with user eg. 'nazar'
+psql -U nazar
+
+/list dbs within psql
+\l
+
+/ create db in psql 
+CREATE DATABASE customer;
+
+/get one lvl up
+CTRL + D
+
+/connect to database "customer" as user "nazar
+docker exec -it postgres bash
+psql -U nazar
+\c customer
+
+/list of relations
+\dt
+\d
